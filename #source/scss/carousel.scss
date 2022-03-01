@@ -19,11 +19,14 @@ $colorRose:#FCDDD4;
     _border: 1px solid $colorBlack;
     
     @media (max-width: 1410px) {
-        _width: 70%;
+        width: 70%;
         padding: 10px;
     }
     @media (max-width: 1300px) {
         margin: 0;
+    }
+    @media (max-width: 830px) {
+        width: 65%;
     }
 }
 
@@ -206,10 +209,6 @@ $colorRose:#FCDDD4;
     color: $colorBlack50;
     display: flex;
     font-family: Helvetica;
-    _font-weight: 100;
-    _align-items: center;
-    _justify-content: center;
-    _text-transform: uppercase;
     flex-direction: column;
     border-radius: 10px;
     _font-size: 56px;
@@ -219,7 +218,7 @@ $colorRose:#FCDDD4;
 
     @media (max-width: 960px) {
         _height: 350px;
-        width: 100%;
+        width: 80%;
     }
     
     p{
