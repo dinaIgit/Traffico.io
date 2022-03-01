@@ -499,13 +499,18 @@ input[name=panel]:checked ~ .accordion__content.accordion__content--large {
 }
 @media (max-width: 1410px) {
   .carousel {
-    _width: 70%;
+    width: 70%;
     padding: 10px;
   }
 }
 @media (max-width: 1300px) {
   .carousel {
     margin: 0;
+  }
+}
+@media (max-width: 830px) {
+  .carousel {
+    width: 65%;
   }
 }
 
@@ -729,14 +734,6 @@ input[name=panel]:checked ~ .accordion__content.accordion__content--large {
   display: -ms-flexbox;
   display: flex;
   font-family: Helvetica;
-  _font-weight: 100;
-  _-webkit-box-align: center;
-  _    -ms-flex-align: center;
-  _        align-items: center;
-  _-webkit-box-pack: center;
-  _    -ms-flex-pack: center;
-  _        justify-content: center;
-  _text-transform: uppercase;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -751,7 +748,7 @@ input[name=panel]:checked ~ .accordion__content.accordion__content--large {
 @media (max-width: 960px) {
   .demo-content {
     _height: 350px;
-    width: 100%;
+    width: 80%;
   }
 }
 .demo-content p {
