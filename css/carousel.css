@@ -1,0 +1,10 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.container h1 {
+  text-align: center;
+  color: #EE4D47;
+  font-size: 42px;
+}

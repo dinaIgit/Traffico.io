@@ -1,0 +1,40 @@
+$colorW:#fff;
+$colorW50:rgba(255, 255, 255, 0.5);
+$colorBlack:#000;
+$colorBlack50:rgba(0, 0, 0, 0.5);
+$colorEE4D47:#EE4D47;
+$colorEE4c:#0f264cab;
+$colorGray:#FEF8F5;
+$colorRose:#FCDDD4;
+
+#row5{
+    @extend %row;
+    position: static;
+    
+    .colum-left{
+        width: 21%;
+        text-align: left;
+        margin-left: 75px;
+        _border: 1px solid $colorBlack;
+        h2{
+            @extend %h2;
+        }
+        p{
+            @extend %pBig;
+        }
+    }
+}
+
+/* Slides Show */
+.sliderShow{
+    width: 74%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    _border: 1px solid $colorBlack;
+    @media (max-width: 1410px) {
+        margin-left: -10%;
+        
+    }
+}
+

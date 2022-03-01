@@ -1,0 +1,60 @@
+$colorW:#fff;
+$colorW50:rgba(255, 255, 255, 0.5);
+$colorBlack:#000;
+$colorBlack50:rgba(0, 0, 0, 0.5);
+$colorEE4D47:#EE4D47;
+$colorF39476:#F39476;
+
+#row1 {
+    width: 100%;
+    max-width: 1800px;
+    height: 160vh;
+    position: relative;
+    @media (max-width:1300px){
+        height: 95vh;
+        _border: 1px solid $colorBlack50;
+    }
+    @media (max-width:1100px){
+        height: 80vh;
+    }
+    @media (max-width: 960px){
+        height: 70vh;  
+    }
+
+    .main-home {
+        width: 89%;
+        height: 100%;
+        margin-top: -100px;
+        background: url(./../img/bgMask.png) no-repeat;
+        background-size: 100%;
+        background-position: left top;
+        @media (max-width: 720px){
+        background: $colorF39476 url(./../img/bgMini.png) no-repeat;
+        background-size: cover;
+        background-position:right top;
+        width: 100%;
+        }
+    }
+    .home-title{
+        padding: 200px 0 70px 200px;
+        h1{
+            font-family: 'DM Serif Display', serif;
+            color: $colorW;
+            font-size: 80px;
+            font-weight: 400;
+            margin: 0 0 50px 0;
+            @media (max-width:1300px){
+                font-size: 60px;
+            }
+            @media (max-width: 1000px){
+            font-size: 40px;
+            }
+            @media (max-width: 960px){
+            font-size: 35px;
+            }
+        }
+        button{
+            @extend %btn;
+        }
+    }
+}

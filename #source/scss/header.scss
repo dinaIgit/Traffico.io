@@ -1,0 +1,55 @@
+$colorW:#fff;
+$colorW50:rgba(255, 255, 255, 0.5);
+$colorBlack:#000;
+$colorBlack50:rgba(0, 0, 0, 0.5);
+$colorEE4D47:#EE4D47;
+
+header{
+    width:95%;
+    height: 100px;
+    position: relative;
+    _border: 1px solid $colorBlack50;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    z-index: 9999;
+    a{
+        color: $colorW;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight:500;
+        &:hover{
+            color: $colorBlack50;
+            transition: all .3s linear;
+        }
+    }
+    .logo{
+        width: 30%;
+        display: block;
+        margin-left: 100px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .nav{
+        width: 65%;
+        margin-right: 20px;
+        @media (max-width: 1300px) {
+            display: none;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                margin-left: 45px;
+                padding: 18px 25px;
+            }
+            .btn{
+            @extend %btn;
+            }
+        }
+        
+    }
+}

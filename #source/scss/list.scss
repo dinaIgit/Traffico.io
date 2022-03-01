@@ -1,0 +1,75 @@
+$colorW:#fff;
+$colorW50:rgba(255, 255, 255, 0.5);
+$colorBlack:#000;
+$colorBlack50:rgba(0, 0, 0, 0.5);
+$colorBlack20:rgba(0, 0, 0, 0.2);
+$colorEE4D47:#EE4D47;
+$colorEE4c:#0f264cab;
+$colorGray:#FEF8F5;
+$colorRoseLicht:#FDEDE8;
+$color333:#333;
+$colorEE:#eee;
+
+
+.box-list {
+    margin: 20px 0;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgba(238, 77, 71, 0.1);
+
+    .accordion {
+        background-color: $colorW;
+        color: $colorBlack50;
+        cursor: pointer;
+        padding: 25px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 24px;
+        font-family: 'Rubik', sans-serif;
+        transition: all 0.4s linear;
+        border-radius: 12px;
+        box-shadow: 5px 5px 10px rgba(238, 77, 71, 0.1);
+        _border: 1px solid #000;
+
+        button {
+            &:hover {
+                background-color: $colorRoseLicht;
+                transition: all 0.4s linear;
+                cursor: pointer;
+            }
+        }
+
+        &:hover {
+            background-color: $colorRoseLicht;
+            transition: all 0.4s linear;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: $colorW;
+            transition: all 0.4s linear;
+            cursor: pointer;
+        }
+    }
+
+    .panel {
+        width: 100%;
+        padding: 0 18px;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+        box-shadow: 5px 5px 10px rgba(238, 77, 71, 0.1);
+        margin-bottom: 20px;
+        border-radius: 0 0 7px 7px;
+
+        p {
+            padding-top: 40px;
+            padding-bottom: 70px;
+            font-size: 20px;
+            color: $colorEE4c;
+            line-height: 40px;
+        }
+    }
+}
